@@ -23,7 +23,7 @@ Caffeine is a system applet that allows the user to temporarily
 inhibit both the screensaver and the sleep power saving mode, simply
 by clicking on it. This could be useful for example when watching 
 long flash videos or playing certain full screen games that don't
-inhibit the screensaver by themselves. 
+inhibit the screensaver by themselves 
 
 %prep
 %setup -q -n %{name}-%{version}
