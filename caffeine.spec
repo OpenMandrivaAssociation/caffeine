@@ -1,4 +1,4 @@
-Summary:	Caffeine is a tiny cup of coffee that sits idly in your system tray waiting for you to click it.
+Summary:	Caffeine is a tiny cup of coffee that sits idly in your system tray waiting for you to click it
 Name:		caffeine
 Version:	2.2.386
 Release:	%mkrel 1
