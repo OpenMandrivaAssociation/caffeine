@@ -5,6 +5,10 @@ Release:	%mkrel 1
 Group:		Graphical desktop/GNOME
 License:	LGPL
 Source0:	%{name}-%{version}.tar.bz2
+Source11:	%{name}.desktop
+Source12:	%{name}-preferences.desktop
+Patch1:		%{name}.desktop.patch
+Patch2:		%{name}-preferences.desktop.patch
 BuildRoot:	%{_tmppath}/%{name}-%{version}-build
 URL:		https://launchpad.net/~caffeine-developers/+archive/ppa/+packages
 BuildRequires: 	pygtk2.0-devel
@@ -27,6 +31,8 @@ inhibit the screensaver by themselves
 
 %prep
 %setup -q -n %{name}-%{version}
+%patch1 -p0
+%patch2 -p0
 
 %build
 
