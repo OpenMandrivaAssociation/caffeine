@@ -54,4 +54,4 @@ inhibit the screensaver by themselves.
 %{_iconsdir}/ubuntu-mono-dark/*
 %{_mandir}/*
 %{_datadir}/pixmaps/caffeine.png
-
+%{_datadir}/glib-2.0/schemas/*.xml
