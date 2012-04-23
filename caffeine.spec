@@ -12,7 +12,7 @@ Patch1:		%{name}.desktop.patch
 Patch2:		%{name}-preferences.desktop.patch
 URL:		https://launchpad.net/~caffeine-developers/+archive/ppa/+packages
 BuildRequires:	pygtk2.0-devel
-BuildRequires:	libpython-devel
+BuildRequires:	python-devel
 BuildRequires:	gettext
 BuildRequires:	gettext-devel
 Requires:	python-xlib
