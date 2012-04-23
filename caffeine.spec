@@ -1,7 +1,8 @@
 Summary:	A system applet that allows to temporarily inhibit screensaver and sleep mode
 Name:		caffeine
-Version:	2.4.419
+Version:	2.2.386
 Release:	%mkrel 1
+Epoch:		1
 Group:		Graphical desktop/GNOME
 License:	LGPL
 Source0:	%{name}-%{version}.tar.bz2
@@ -11,7 +12,7 @@ Patch1:		%{name}.desktop.patch
 Patch2:		%{name}-preferences.desktop.patch
 URL:		https://launchpad.net/~caffeine-developers/+archive/ppa/+packages
 BuildRequires:	pygtk2.0-devel
-BuildRequires:	python-devel
+BuildRequires:	libpython-devel
 BuildRequires:	gettext
 BuildRequires:	gettext-devel
 Requires:	python-xlib
@@ -26,7 +27,7 @@ Caffeine is a system applet that allows the user to temporarily
 inhibit both the screensaver and the sleep power saving mode, simply
 by clicking on it. This could be useful for example when watching
 long flash videos or playing certain full screen games that don't
-inhibit the screensaver by themselves.
+inhibit the screensaver by themselves
 
 %prep
 %setup -q
@@ -45,7 +46,8 @@ inhibit the screensaver by themselves.
 %__rm -rf %{buildroot}
 
 %files -f %{name}.lang
-%{_bindir}/caffeine
+%defattr(644,root,root,755)
+%attr(755,root,root) %{_bindir}/caffeine
 %{py_platsitedir}/*
 %{_datadir}/applications/*
 %{_datadir}/caffeine/glade/*.glade
@@ -54,4 +56,3 @@ inhibit the screensaver by themselves.
 %{_iconsdir}/ubuntu-mono-dark/*
 %{_mandir}/*
 %{_datadir}/pixmaps/caffeine.png
-%{_datadir}/glib-2.0/schemas/*.xml
