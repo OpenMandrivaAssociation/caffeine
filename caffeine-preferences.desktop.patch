@@ -1,0 +1,12 @@
+--- share/applications/caffeine-preferences.desktop.old	2011-06-25 09:18:38.000000000 +0400
++++ share/applications/caffeine-preferences.desktop	2011-08-22 23:45:33.000000000 +0400
+@@ -2,7 +2,9 @@
+ Encoding=UTF-8
+ Icon=caffeine
+ Name=Caffeine Preferences
++Name[ru]=Параметры Caffeine
+ Comment=Change your Caffeine configuration
++Comment[ru]=Изменить конфигурацию вашего Caffeine
+ Exec=/usr/bin/caffeine -p
+ Terminal=false
+ Type=Application

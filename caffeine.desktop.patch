@@ -1,0 +1,12 @@
+--- share/applications/caffeine.desktop.old	2011-06-25 09:18:38.000000000 +0400
++++ share/applications/caffeine.desktop	2011-08-22 23:48:16.000000000 +0400
+@@ -2,7 +2,9 @@
+ Encoding=UTF-8
+ Icon=caffeine
+ Name=Caffeine
++Name[ru]=Caffeine
+ Comment=Temporarily deactivate the screensaver and sleep mode
++Comment[ru]=Временное отключение экранной заставки и режима сна
+ Exec=/usr/bin/caffeine
+ Terminal=false
+ Type=Application
