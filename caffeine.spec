@@ -56,3 +56,21 @@ inhibit the screensaver by themselves
 %{_iconsdir}/ubuntu-mono-dark/*
 %{_mandir}/*
 %{_datadir}/pixmaps/caffeine.png
+
+
+%changelog
+* Mon Apr 23 2012 Andrey Bondrov <abondrov@mandriva.org> 1:2.2.386-1mdv2012.0
++ Revision: 792866
+- Revert version to stable 2.2.386
+
+* Sun Apr 22 2012 Andrey Bondrov <abondrov@mandriva.org> 2.4.419-1
++ Revision: 792699
+- New version 2.4.419
+
+  + Sergey Zhemoitel <serg@mandriva.org>
+    - fix russian comments in .desktop
+
+* Sat Jul 23 2011 Александр Казанцев <kazancas@mandriva.org> 2.2.386-1
++ Revision: 691173
+- imported package caffeine
+
