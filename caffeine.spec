@@ -38,7 +38,7 @@ long flash videos or playing certain full screen games that don't
 inhibit the screensaver by themselves
 
 %prep
-%setup -qn %{name}
+%setup -qn %{name}-%{version}
 %autopatch -p1
 
 %build
