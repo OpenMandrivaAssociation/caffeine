@@ -23,8 +23,8 @@ Requires:       python-notify
 Requires:       python-pyxdg
 Requires:       python-dbus
 
-Requires:	gnome-python
-Requires:	gnome-python-gconf
+#Requires:	gnome-python
+#Requires:	gnome-python-gconf
 Requires:	pygtk2.0
 Requires:	python-notify
 Requires:	python-xlib
