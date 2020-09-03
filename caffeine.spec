@@ -1,6 +1,6 @@
 Summary:	A system applet that allows to temporarily inhibit screensaver and sleep mode
 Name:		caffeine
-Version:	2.9.5
+Version:	2.9.8
 Release:	1
 Epoch:		1
 License:	LGPLv2+
