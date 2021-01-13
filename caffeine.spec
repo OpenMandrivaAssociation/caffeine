@@ -10,7 +10,7 @@ Source0:	https://launchpad.net/~caffeine-developers/+archive/ubuntu/ppa/+sourcef
 
 BuildRequires:	gettext
 BuildRequires:	gettext-devel
-#BuildRequires:	pkgconfig(python)
+BuildRequires:	pkgconfig(python)
 BuildRequires:  gobject-introspection
 
 Requires:       python-xlib
@@ -51,3 +51,5 @@ rm -r %{buildroot}%{_sysconfdir}
 %{_datadir}/pixmaps/%{name}.png
 %{_mandir}/man1/*.1*
 %{_datadir}/caffeine-indicator/glade/GUI.glade
+%{_prefix}/compile_translations.py
+%{_prefix}/VERSION
