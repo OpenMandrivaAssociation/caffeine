@@ -1,12 +1,12 @@
 Summary:	A system applet that allows to temporarily inhibit screensaver and sleep mode
 Name:		caffeine
-Version:	2.9.8
+Version:	2.9.12
 Release:	1
-Epoch:		1
 License:	LGPLv2+
 Group:		Graphical desktop/GNOME
-Url:		https://launchpad.net/~caffeine-developers/+archive/ppa/+packages
-Source0:	https://launchpad.net/~caffeine-developers/+archive/ubuntu/ppa/+sourcefiles/%{name}/%{version}/%{name}_%{version}.tar.gz
+Url:		https://launchpad.net/caffeine
+#Source0:	https://launchpad.net/~caffeine-developers/+archive/ubuntu/ppa/+sourcefiles/%{name}/%{version}/%{name}_%{version}.tar.gz
+Source0:  https://files.pythonhosted.org/packages/source/c/cups-of-caffeine/cups-of-caffeine-%{version}.tar.gz
 
 BuildRequires:	gettext
 BuildRequires:	gettext-devel
@@ -27,8 +27,7 @@ long flash videos or playing certain full screen games that don't
 inhibit the screensaver by themselves
 
 %prep
-%setup -qn %{name}-%{version}
-%autopatch -p1
+%autosetup -n cups-of-caffeine-%{version} -p1
 
 %build
 %py_build
