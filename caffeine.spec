@@ -42,13 +42,16 @@ rm -r %{buildroot}%{_sysconfdir}
 
 %files -f %{name}-indicator.lang
 #doc COPYING COPYING.LESSER README
-#{_bindir}/*
-#{python_sitelib}/%{name}-%{version}-py%{python_version}.egg-info
-#{_datadir}/applications/%{name}*.desktop
-#{_datadir}/icons/hicolor/*/apps/%{name}.*
-#{_datadir}/icons/hicolor/*/status/%{name}-*.*
-#{_datadir}/pixmaps/%{name}.png
-#{_mandir}/man1/*.1*
-#{_datadir}/caffeine-indicator/glade/GUI.glade
-#{_prefix}/compile_translations.py
-#{_prefix}/VERSION
+%{_bindir}/caffeinate
+%{_bindir}/caffeine
+%{_bindir}/caffeine-indicator
+%{_datadir}/applications/caffeine-indicator.desktop
+%{_datadir}/applications/caffeine.desktop
+%{_datadir}/caffeine-indicator/glade/GUI.glade
+%{_iconsdir}/hicolor/16x16/apps/*
+%{_iconsdir}/hicolor/*x*/status/*
+%{_iconsdir}/hicolor/scalable/apps/caffeine.svg
+%{_iconsdir}/hicolor/scalable/status/caffeine-cup-empty.svg
+%{_iconsdir}/hicolor/scalable/status/caffeine-cup-full.svg
+%{python_sitelib}/cups_of_caffeine-%{version}-py*.*.egg-info
+
