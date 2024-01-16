@@ -48,7 +48,11 @@ rm -r %{buildroot}%{_sysconfdir}
 %{_datadir}/applications/caffeine-indicator.desktop
 %{_datadir}/applications/caffeine.desktop
 %{_datadir}/caffeine-indicator/glade/GUI.glade
-%{_iconsdir}/hicolor/16x16/apps/*
+%{_datadir}/pixmaps/caffeine.png
+%{_mandir}/man1/caffeinate.1.*
+%{_mandir}/man1/caffeine-indicator.1.*
+%{_mandir}/man1/caffeine.1.*
+%{_iconsdir}/hicolor/*x*/apps/*
 %{_iconsdir}/hicolor/*x*/status/*
 %{_iconsdir}/hicolor/scalable/apps/caffeine.svg
 %{_iconsdir}/hicolor/scalable/status/caffeine-cup-empty.svg
