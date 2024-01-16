@@ -41,7 +41,7 @@ rm -r %{buildroot}%{_sysconfdir}
 %find_lang %{name}-indicator
 
 %files -f %{name}-indicator.lang
-%doc COPYING COPYING.LESSER README
+#doc COPYING COPYING.LESSER README
 #{_bindir}/*
 #{python_sitelib}/%{name}-%{version}-py%{python_version}.egg-info
 #{_datadir}/applications/%{name}*.desktop
