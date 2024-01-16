@@ -1,12 +1,12 @@
 Summary:	A system applet that allows to temporarily inhibit screensaver and sleep mode
 Name:		caffeine
-Version:	2.9.8
+Version:	2.9.12
 Release:	1
-Epoch:		1
 License:	LGPLv2+
 Group:		Graphical desktop/GNOME
-Url:		https://launchpad.net/~caffeine-developers/+archive/ppa/+packages
-Source0:	https://launchpad.net/~caffeine-developers/+archive/ubuntu/ppa/+sourcefiles/%{name}/%{version}/%{name}_%{version}.tar.gz
+Url:		https://launchpad.net/caffeine
+#Source0:	https://launchpad.net/~caffeine-developers/+archive/ubuntu/ppa/+sourcefiles/%{name}/%{version}/%{name}_%{version}.tar.gz
+Source0:  https://files.pythonhosted.org/packages/source/c/cups-of-caffeine/cups-of-caffeine-%{version}.tar.gz
 
 BuildRequires:	gettext
 BuildRequires:	gettext-devel
@@ -27,8 +27,7 @@ long flash videos or playing certain full screen games that don't
 inhibit the screensaver by themselves
 
 %prep
-%setup -qn %{name}-%{version}
-%autopatch -p1
+%autosetup -n cups-of-caffeine-%{version} -p1
 
 %build
 %py_build
@@ -42,14 +41,21 @@ rm -r %{buildroot}%{_sysconfdir}
 %find_lang %{name}-indicator
 
 %files -f %{name}-indicator.lang
-%doc COPYING COPYING.LESSER README
-%{_bindir}/*
-%{python_sitelib}/%{name}-%{version}-py%{python_version}.egg-info
-%{_datadir}/applications/%{name}*.desktop
-%{_datadir}/icons/hicolor/*/apps/%{name}.*
-%{_datadir}/icons/hicolor/*/status/%{name}-*.*
-%{_datadir}/pixmaps/%{name}.png
-%{_mandir}/man1/*.1*
+#doc COPYING COPYING.LESSER README
+%{_bindir}/caffeinate
+%{_bindir}/caffeine
+%{_bindir}/caffeine-indicator
+%{_datadir}/applications/caffeine-indicator.desktop
+%{_datadir}/applications/caffeine.desktop
 %{_datadir}/caffeine-indicator/glade/GUI.glade
-%{_prefix}/compile_translations.py
-%{_prefix}/VERSION
+%{_datadir}/pixmaps/caffeine.png
+%{_mandir}/man1/caffeinate.1.*
+%{_mandir}/man1/caffeine-indicator.1.*
+%{_mandir}/man1/caffeine.1.*
+%{_iconsdir}/hicolor/*x*/apps/*
+%{_iconsdir}/hicolor/*x*/status/*
+%{_iconsdir}/hicolor/scalable/apps/caffeine.svg
+%{_iconsdir}/hicolor/scalable/status/caffeine-cup-empty.svg
+%{_iconsdir}/hicolor/scalable/status/caffeine-cup-full.svg
+%{python_sitelib}/cups_of_caffeine-%{version}-py*.*.egg-info
+
