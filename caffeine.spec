@@ -1,6 +1,6 @@
 Summary:	A system applet that allows to temporarily inhibit screensaver and sleep mode
 Name:		caffeine
-Version:	2.9.12
+Version:	2.9.14
 Release:	1
 License:	LGPLv2+
 Group:		Graphical desktop/GNOME
