@@ -27,7 +27,7 @@ long flash videos or playing certain full screen games that don't
 inhibit the screensaver by themselves
 
 %prep
-%autosetup -n cups-of-caffeine-%{version} -p1
+%autosetup -n cups_of_caffeine-%{version} -p1
 
 %build
 %py_build
