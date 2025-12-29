@@ -12,6 +12,7 @@ BuildRequires:	gettext
 BuildRequires:	gettext-devel
 BuildRequires:	pkgconfig(python)
 BuildRequires:  gobject-introspection
+BuildRequires:  python%{pyver}dist(setuptools)
 
 Requires:       python-xlib
 Requires:       python-notify
