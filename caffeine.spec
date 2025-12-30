@@ -50,6 +50,7 @@ rm -r %{buildroot}%{_sysconfdir}
 %{_datadir}/applications/caffeine.desktop
 %{_datadir}/caffeine-indicator/glade/GUI.glade
 %{_datadir}/pixmaps/caffeine.png
+%{_datadir}/glib-2.0/schemas/org.sc3d.caffeine.gschema.xml
 %{_mandir}/man1/caffeinate.1.*
 %{_mandir}/man1/caffeine-indicator.1.*
 %{_mandir}/man1/caffeine.1.*
