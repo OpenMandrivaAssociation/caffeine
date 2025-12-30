@@ -15,7 +15,7 @@ BuildRequires:  gobject-introspection
 BuildRequires:  python%{pyver}dist(setuptools)
 
 Requires:       python-xlib
-Requires:       python-notify
+#Requires:       python-notify
 Requires:       python3dist(pyxdg)
 Requires:       python-dbus
 BuildArch:	noarch
