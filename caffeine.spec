@@ -1,12 +1,12 @@
 Summary:	A system applet that allows to temporarily inhibit screensaver and sleep mode
 Name:		caffeine
-Version:	2.9.14
-Release:	2
+Version:	2.10.0
+Release:	1
 License:	LGPLv2+
 Group:		Graphical desktop/GNOME
 Url:		https://launchpad.net/caffeine
 #Source0:	https://launchpad.net/~caffeine-developers/+archive/ubuntu/ppa/+sourcefiles/%{name}/%{version}/%{name}_%{version}.tar.gz
-Source0:  https://files.pythonhosted.org/packages/source/c/cups-of-caffeine/cups-of-caffeine-%{version}.tar.gz
+Source0:  https://files.pythonhosted.org/packages/source/c/cups-of-caffeine/cups_of_caffeine-%{version}.tar.gz
 
 BuildRequires:	gettext
 BuildRequires:	gettext-devel
@@ -50,6 +50,7 @@ rm -r %{buildroot}%{_sysconfdir}
 %{_datadir}/applications/caffeine.desktop
 %{_datadir}/caffeine-indicator/glade/GUI.glade
 %{_datadir}/pixmaps/caffeine.png
+%{_datadir}/glib-2.0/schemas/org.sc3d.caffeine.gschema.xml
 %{_mandir}/man1/caffeinate.1.*
 %{_mandir}/man1/caffeine-indicator.1.*
 %{_mandir}/man1/caffeine.1.*
