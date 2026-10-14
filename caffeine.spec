@@ -10,13 +10,13 @@ Source0:  https://files.pythonhosted.org/packages/source/c/cups-of-caffeine/cups
 
 BuildRequires:	gettext
 BuildRequires:	gettext-devel
-BuildRequires:	pkgconfig(python)
+BuildRequires:	pkgconfig(python3)
 BuildRequires:  gobject-introspection
 BuildRequires:  python%{pyver}dist(setuptools)
 
 Requires:       python-xlib
 #Requires:       python-notify
-Requires:       python3dist(pyxdg)
+Requires:       python%{pyver}dist(pyxdg)
 Requires:       python-dbus
 BuildArch:	noarch
 
